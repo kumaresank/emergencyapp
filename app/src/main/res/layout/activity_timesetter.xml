@@ -1,0 +1,123 @@
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#1C99DA">
+
+    <TabHost
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#1EC2FF"></TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/firsttimer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="FIRST TIMER"
+                        android:id="@+id/textView5"
+                        style="@style/ShadowText"
+                        android:textColor="@color/header_background_start"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textSize="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TimePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timePicker"
+                        android:layout_marginTop="91dp"
+                        android:layout_below="@+id/textView5"
+                        android:layout_alignLeft="@+id/textView5"
+                        android:layout_alignStart="@+id/textView5"
+                        android:layout_marginLeft="38dp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SET"
+                        android:id="@+id/setp"
+                        android:background="@drawable/button_background_states"
+                        android:textColor="#F05152"
+                        android:textStyle="bold"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/secondtimer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="SECOND TIMER"
+                        android:id="@+id/textView6"
+                        style="@style/ShadowText"
+                        android:textColor="@color/header_background_start"
+                        android:textStyle="bold"
+                        android:typeface="monospace"
+                        android:textSize="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TimePicker
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/timePicker2"
+                        android:layout_marginTop="91dp"
+                        android:layout_below="@+id/textView6"
+                        android:layout_alignLeft="@+id/textView6"
+                        android:layout_alignStart="@+id/textView6"
+                        android:layout_marginLeft="42dp"/>
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="SET"
+                        android:id="@+id/sets"
+                        android:background="@drawable/button_background_states"
+                        android:textColor="#F05152"
+                        android:textStyle="bold"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

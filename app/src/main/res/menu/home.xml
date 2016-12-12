@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.emergencyapp.app.Home" >
+    
+    <item android:id="@+id/contact"
+        android:title="Import Contacts"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+
+        />
+
+    <item android:id="@+id/message"
+        android:title="Edit Messages"
+        android:orderInCategory="100"
+        app:showAsAction="never"        />
+    <item android:id="@+id/settimer"
+        android:title="Set Timers"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/changepin"
+        android:title="Change Security Pin"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/about"
+        android:title="About"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    </menu>

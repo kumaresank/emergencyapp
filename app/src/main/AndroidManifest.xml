@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.emergencyapp.app" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.emergencyapp.app.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Home"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Main_Screen"
+            android:label="Main Screen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Add_Update_User"
+            android:label="Add User"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Timesetter"
+            android:label="Set Timer"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Setuppin"
+            android:label="@string/title_activity_setuppin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Enterpin"
+            android:label="@string/title_activity_enterpin"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.MessageEdit"
+            android:label="@string/title_activity_message_edit" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Update_Pin"
+            android:label="@string/title_activity_update__pin"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.example.emergencyapp.app.Maintimer"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.example.emergencyapp.app.Secondarytimer"
+            android:enabled="true" >
+        </service>
+
+        <activity
+            android:name="com.example.emergencyapp.app.ExitSecurity"
+            android:label="@string/title_activity_exit_security"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.About"
+            android:label="@string/title_activity_about"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.emergencyapp.app.Licence_Expired"
+            android:label="@string/title_activity_licence__expired" >
+        </activity>
+    </application>
+
+</manifest>

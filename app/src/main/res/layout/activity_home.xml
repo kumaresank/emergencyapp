@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emergencyapp.app.Home"
+    android:background="#F05152">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="00:00:00"
+        android:id="@+id/showtimer"
+        android:layout_marginTop="56dp"
+        style="@style/TimerChronometer"
+        android:textColor="@color/edit_text_background_end"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#803A3A3A" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/reset"
+        android:background="@drawable/button_background_states"
+        android:textColor="#F05152"
+        android:textSize="30dp"
+        android:typeface="monospace"
+        android:padding="10dp"
+        android:layout_marginBottom="75dp"
+        android:layout_above="@+id/exit"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="00:00:00"
+        android:id="@+id/timer2"
+        android:textSize="20dp"
+        android:textColor="@color/edit_text_background_end"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/exit"
+        android:layout_alignEnd="@+id/exit" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="EXIT"
+        android:id="@+id/exit"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:textSize="25dp"
+        android:textColor="#F05152"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:background="@drawable/button_background_states"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp" />
+
+
+</RelativeLayout>

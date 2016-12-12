@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emergencyapp.app.Update_Pin"
+    android:background="#F05152">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Change Pin"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:typeface="monospace"
+        android:textSize="40dp"
+        android:capitalize="none"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/ShadowText"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/newpin"
+        android:background="@drawable/edit_text_background"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:radius="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/confirm"
+        android:background="@drawable/edit_text_background"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:layout_alignStart="@+id/newpin"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/newpin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter New Pin:"
+        android:id="@+id/textView2"
+        android:textColor="#ffffff"
+        android:layout_marginTop="145dp"
+        style="@style/ShadowText"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/done"
+        android:layout_alignEnd="@+id/done" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Confim Pin:"
+        android:id="@+id/textView3"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/newpin"
+        android:layout_alignLeft="@+id/newpin"
+        android:layout_alignStart="@+id/newpin"
+        style="@style/ShadowText"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#F05152"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/button_background_states"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:id="@+id/cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#F05152"
+        android:textSize="20dp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/button_background_states"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Current Pin"
+        android:id="@+id/textView4"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/oldpin"
+        android:background="@drawable/edit_text_background"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

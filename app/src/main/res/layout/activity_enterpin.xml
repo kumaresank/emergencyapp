@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.emergencyapp.app.Enterpin"
+    android:background="#F05152">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Pin"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:typeface="monospace"
+        android:textSize="40dp"
+        android:capitalize="none"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        style="@style/ShadowText"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/key"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:layout_above="@+id/spin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/spin"
+        android:background="@drawable/edit_text_background"
+        android:password="true"
+        android:singleLine="true"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:padding="5dp"
+        android:radius="20dp"
+        android:layout_above="@+id/ok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="133dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/ok"
+        android:background="@drawable/button_background_states"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:textColor="#F05152"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
